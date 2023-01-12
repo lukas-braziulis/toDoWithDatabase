@@ -1,0 +1,17 @@
+{
+    "name": "lukas_braziulis/2023-01-10_to-do-with-data-base_praktika",
+    "autoload": {
+        "psr-4": {
+            "ToDoSrc\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "lukas-braziu",
+            "email": "lukas.braziulis@gmail.com"
+        }
+    ],
+    "require": {
+        "smarty/smarty": "^4.3"
+    }
+}
