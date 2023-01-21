@@ -14,6 +14,10 @@ class TaskService
         $this->tasksRepository = $tasksRepository;
     }
 
+    // vietoj pasikartojancio kodo patikrinant name, deccription, id - galima sukurti tris privacias funkcijas:
+    // validateName(); validateDecription(); validateId();
+    // ir naudotis tais metodais, vietoj copy-paste kodo. (zr. zemiau)
+
         public function create(array $request)
         {
             if(!isset($request['name']) || empty($request['name'])) {
@@ -66,5 +70,32 @@ class TaskService
             $this->tasksRepository->editTaskById((int)$request['task_id'], $request['name'], $request['description']);
 
         }
+
+    /*
+    private function validateName(string $name): bool
+    {
+        if (!isset($name) || empty($name)) {
+            throw new \Exception('Name field is required.');
+        }
+        return true;
+    }
+
+    private function validateDescription(string $description): bool
+    {
+        if (!isset($description) || empty($description)) {
+            throw new \Exception('Description field is required.');
+        }
+        return true;
+    }
+
+    private function validateId(string $id): bool
+    {
+        if (!isset($id) || empty($id)) {
+            throw new \Exception('Task ID is empty or not provided.');
+
+        }
+        return true;
+    }
+    */
 
 }
