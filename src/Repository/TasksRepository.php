@@ -51,5 +51,13 @@ class TasksRepository
 
         return $statement->fetchAll(\PDO::FETCH_ASSOC);
     }
+
+    public function editTaskById(int $taskId, string $name, string $description): void
+    {
+        $conn = $this->db();
+        $statement = $conn->prepare('UPDATE tasks SET name = :name, description = :description WHERE id = :taskId');
+        $statement->execute(['taskId' => $taskId, 'name' => $name, 'description' => $description]);
+
+    }
 }
 

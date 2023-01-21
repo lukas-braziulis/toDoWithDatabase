@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.0, created on 2023-01-12 20:01:54
+/* Smarty version 4.3.0, created on 2023-01-21 08:15:49
   from '/Users/lukas_braziulis/Sites/toDoWithDataBase/src/View/task_update_page.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.0',
-  'unifunc' => 'content_63c067327092a3_21121717',
+  'unifunc' => 'content_63cb9f35a95089_30362301',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ff5720e5504400c3d561a3144535988ee7c197b1' => 
     array (
       0 => '/Users/lukas_braziulis/Sites/toDoWithDataBase/src/View/task_update_page.tpl',
-      1 => 1673553709,
+      1 => 1674288936,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_63c067327092a3_21121717 (Smarty_Internal_Template $_smarty_tpl) {
+function content_63cb9f35a95089_30362301 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -30,12 +30,12 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
     <meta charset="UTF-8">
     <title>Update Task</title>
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_132384873863c06732702606_64500400', "css");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_165363543663cb9f35a91938_10925356', "css");
 ?>
 
 
         <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_41079773263c067327049f9_60315152', "js");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_85524766263cb9f35a92b32_01121160', "js");
 ?>
 
 </head>
@@ -47,7 +47,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_41079773263c067327
     </div>
 </header>
 <main>
-<form method="post" action="/toDoWithDataBase/update">
+<form method="post" action="/toDoWithDataBase/edit">
 <fieldset>
     <legend><h3>Update Task</h3></legend>
     <input type="hidden" name="task_id" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['id'];?>
@@ -63,7 +63,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_41079773263c067327
             <textarea type="text" name="description"><?php echo $_smarty_tpl->tpl_vars['data']->value['description'];?>
 </textarea>
         </div>
-      <input class="submit-button" type="submit" value="Create">     </div>
+      <input class="submit-button" type="submit" value="Update">     </div>
 </fieldset>
 
 </form>
@@ -71,12 +71,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_41079773263c067327
 </body>
 </html><?php }
 /* {block "css"} */
-class Block_132384873863c06732702606_64500400 extends Smarty_Internal_Block
+class Block_165363543663cb9f35a91938_10925356 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'css' => 
   array (
-    0 => 'Block_132384873863c06732702606_64500400',
+    0 => 'Block_165363543663cb9f35a91938_10925356',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -88,12 +88,12 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
 }
 /* {/block "css"} */
 /* {block "js"} */
-class Block_41079773263c067327049f9_60315152 extends Smarty_Internal_Block
+class Block_85524766263cb9f35a92b32_01121160 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'js' => 
   array (
-    0 => 'Block_41079773263c067327049f9_60315152',
+    0 => 'Block_85524766263cb9f35a92b32_01121160',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

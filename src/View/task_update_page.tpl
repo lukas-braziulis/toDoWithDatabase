@@ -21,7 +21,7 @@
     </div>
 </header>
 <main>
-<form method="post" action="/toDoWithDataBase/update">
+<form method="post" action="/toDoWithDataBase/edit">
 <fieldset>
     <legend><h3>Update Task</h3></legend>
     <input type="hidden" name="task_id" value="{$data.id}">
@@ -34,7 +34,7 @@
             <label>Description:</label>
             <textarea type="text" name="description">{$data.description}</textarea>
         </div>
-      <input class="submit-button" type="submit" value="Create"> {*  <<< su situ reikia i6siusti _POST kad UPDATE'intu *}
+      <input class="submit-button" type="submit" value="Update"> {*  <<< su situ reikia issiusti _POST kad UPDATE'intu *}
     </div>
 </fieldset>
 

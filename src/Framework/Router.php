@@ -37,6 +37,9 @@ class Router
             case '/loadEditForm':
                 $this->toDoController->loadEditForm($request);
                 break;
+            case '/edit':
+                $this->toDoController->edit($request);
+                break;
             default:
                 $this->pageNotFoundController->display();
                 break;

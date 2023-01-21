@@ -64,4 +64,12 @@ class ToDoController
         $smarty->assign(['data' => $taskData]);
         $smarty->display(__DIR__ . '/../View/task_update_page.tpl');
     }
+
+    public function edit(array $request)
+    {
+        $this->taskService->edit($request);
+
+        // Redirecting to HomePage
+        header("Location: /toDoWithDataBase/", TRUE, 301);
+    }
 }
